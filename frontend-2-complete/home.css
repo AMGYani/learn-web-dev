@@ -80,7 +80,7 @@ body {
   gap: 28px;
   height: 620px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../images/hero-salon.png") center / cover no-repeat;
+    url("./images/hero-salon.png") center / cover no-repeat;
 }
 
 .hero-text-container {
