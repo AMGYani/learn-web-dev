@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <!-- Перенесите вашу верстку. Удалите статичные данные. Подключите скрипт -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор даты — VANTOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">VANTOR</div>
+        <nav class="nav">
+            <a href="#" class="nav__link">Услуги</a>
+            <a href="#" class="nav__link">Команда</a>
+            <a href="#" class="nav__link">Отзывы</a>
+            <a href="#" class="nav__link">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="stepper-wrapper">
+        <div class="stepper">
+            <div class="stepper__step">1</div>
+            <div class="stepper__line"></div>
+            <div class="stepper__step">2</div>
+            <div class="stepper__line"></div>
+            <div class="stepper__step stepper__step--active">3</div>
+            <div class="stepper__line"></div>
+            <div class="stepper__step">4</div>
+            <div class="stepper__line"></div>
+            <div class="stepper__step">5</div>
+        </div>
     </div>
-  </body>
+
+    <main class="main">
+        <h1 class="main__title">ВЫБОР ДАТЫ</h1>
+
+        <div class="content-layout">
+            <section class="calendar">
+                <div class="calendar__header">
+                    <h2 class="calendar__month" id="monthYear">—</h2>
+                    <div class="calendar__controls">
+                        <button class="calendar__btn" id="prevMonth" aria-label="Предыдущий месяц">&lt;</button>
+                        <button class="calendar__btn" id="nextMonth" aria-label="Следующий месяц">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="calendar__weekdays">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Вс</span>
+                </div>
+
+                <div class="calendar__grid" id="calendarGrid"></div>
+            </section>
+
+            <section class="time">
+                <h2 class="time__title">Доступное время</h2>
+                <div class="time__grid" id="timeGrid"></div>
+            </section>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="bottom-bar__info">
+                <span class="bottom-bar__label">Выбранная дата и время:</span>
+                <span class="bottom-bar__value" id="selectionValue">—</span>
+            </div>
+            <button class="btn-select" id="selectBtn">ВЫБРАТЬ</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__col">
+                <h3 class="footer__heading">VANTOR</h3>
+                <a href="#" class="footer__link">СТАТЬ БАРБЕРОМ</a>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">КОНТАКТЫ</h3>
+                <div class="footer__contact">
+                    <span>ул. Садовая, 15, Москва</span>
+                </div>
+                <div class="footer__contact">
+                    <span>+7 (495) 123-45-67</span>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">РЕЖИМ РАБОТЫ</h3>
+                <p class="footer__text">Пн-Пт: 9:00 - 21:00</p>
+                <p class="footer__text">Сб-Вс: 10:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2026. Все права защищены.</p>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
