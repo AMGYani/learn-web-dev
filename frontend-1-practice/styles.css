@@ -22,7 +22,6 @@ body {
     flex-direction: column;
 }
 
-/* --- Шапка --- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -59,7 +58,6 @@ body {
     text-underline-offset: 6px; 
 }
 
-/* --- Прогресс-бар --- */
 .stepper-wrapper {
     background-color: #ffffff;
     padding: 20px 0;
@@ -99,7 +97,6 @@ body {
     z-index: 1;
 }
 
-/* --- Основной контент --- */
 .main {
     flex: 1;
     padding: 40px 50px;
@@ -122,7 +119,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* --- Календарь --- */
 .calendar {
     flex: 1;
     min-width: 400px;
@@ -234,7 +230,6 @@ body {
 }
 
 
-/* --- Время --- */
 .time {
     flex: 1;
     min-width: 300px;
@@ -292,7 +287,6 @@ body {
     margin-top: 4px;
 }
 
-/* --- Подвал --- */
 .footer {
     background-color: #000000;
     padding: 60px 50px 30px;
@@ -370,7 +364,6 @@ body {
     color: #666666;
 }
 
-/* --- Адаптивность --- */
 @media (max-width: 900px) {
     .header {
         flex-direction: column;
