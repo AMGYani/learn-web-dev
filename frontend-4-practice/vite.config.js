@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import apiMiddleware from "./server/server.js";
+import { mockApiPlugin } from "./server/server.js";
 
 export default defineConfig({
-  plugins: [react(), apiMiddleware()],
-  server: {
-    port: 3000,
-  },
+  plugins: [react(), mockApiPlugin()],
+  server: { port: 3000 },
+  root: ".",
+  build: { outDir: "dist", assetsDir: "assets" },
 });
